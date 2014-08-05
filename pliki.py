@@ -23,12 +23,18 @@ tekst='''The Zen of Python
     Namespaces are one honking great idea -- let's do more of those!
 
 '''
-with open("plik.txt", "w+") as f:
+with open("plik.txt", "w") as f:
   f.write(tekst)
-with open("plik.txt", "r+") as f:
-  g = f.read()
-  print g, g[10:20], 
+with open("plik.txt", "r") as f:
+  g = f.read(10)
+  print g,# g[10:20], 
   z=[x for x in g]
   z.reverse()
   print z
   print f.readline()
+  
+  with open("test.txt", "a+") as foo:
+    
+    z=foo.read()
+    foo.write(tekst)
+    print "z=",z

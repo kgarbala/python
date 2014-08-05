@@ -1,48 +1,48 @@
 # Krzysztof Garbala
 # -*- coding: utf-8 -*-
 
-class Zespolona:
-  def __init__(self, rzeczywista, urojona):
-    self.r = rzeczywista
-    self.i = urojona
-  def name(self):
-    print "test"
 
-x = Zespolona(3.0,-4.5)
-print x.r, x.i
-x.name()
+class Zespolona:
+    # czy tu sie komentuje
+    def __init__(self, rzeczywista, urojona):
+        self.r = rzeczywista
+        self.i = urojona
+    def name(self):
+        print "test"
+
+zesp = Zespolona(3.0, -4.5)
+print zesp.r, zesp.i
+zesp.name()
 
 class Pusta:
-  def pisz(self):
-      print "PUSTA!"
-  pass
-  
+    def pisz(self):
+        print "PUSTA!"
+    pass
 
-z = Pusta()
-z.imie = "Krzysztof"
-z.nazwisko = "Garbala"
-
-print z.imie
+struktura = Pusta()
+struktura.imie = "Krzysztof"
+struktura.nazwisko = " Garbala"
+print "Klasa Pusta", len(struktura.imie), type(struktura.imie), struktura.imie
++ struktura.nazwisko
 
 class Lista(Pusta):
-  def __init__(self, lista):
-    self.lista = lista
-    self.rob1 = [x for x in lista]
-    self.rob2 = self.rob1.reverse()
-    self.rob3 = "".join(self.rob1)
-  def wyswietl(self):
-    if self.lista=="Kazik Kryminal": 
-      print "\n"*3, 'dziala'
-    return self.rob1, self.rob3, self.lista
-  def kodowanie(self):
-    self.kod1 = [ord(x) for x in self.lista] 
-    return self.kod1,
-w=Lista("Krzysztof Garbala")
-print w.wyswietl()
+    def __init__(self, lista):
+        self.lista = lista
+        self.rob1 = [x for x in lista]
+        self.rob2 = self.rob1.reverse()
+        self.rob3 = "".join(self.rob1)
+    def wyswietl(self):
+        if self.lista == "Kazik Kryminal":
+            print "\n"*3, 'dziala'
+        return self.rob1, self.rob3, self.lista
+    def kodowanie(self):
+        self.kod1 = [ord(x) for x in self.lista]
+        return self.kod1
 
-z=Lista("Kazik Kryminal")
+w = Lista("Krzysztof Garbala")
+print w.wyswietl()
+z = Lista("Kazik Kryminal")
 print z.wyswietl()
 print z.kodowanie()
-
 print w.kodowanie()
 print w.pisz()
