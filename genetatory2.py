@@ -5,7 +5,8 @@ def info():
 	yield "?"
 	
 print " ".join(info())
-
+print "Urabura"
+print "Urabura"
 g=lambda x, y: x+y*2
 print g(8, 1),
 z=lambda x, y: x+y
