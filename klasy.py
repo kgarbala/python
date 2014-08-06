@@ -22,8 +22,7 @@ class Pusta:
 struktura = Pusta()
 struktura.imie = "Krzysztof"
 struktura.nazwisko = " Garbala"
-print "Klasa Pusta", len(struktura.imie), type(struktura.imie), struktura.imie
-+ struktura.nazwisko
+print "Klasa Pusta", len(struktura.imie), type(struktura.imie), struktura.imie + struktura.nazwisko
 
 class Lista(Pusta):
     def __init__(self, lista):
@@ -46,3 +45,23 @@ print z.wyswietl()
 print z.kodowanie()
 print w.kodowanie()
 print w.pisz()
+print "\n"*3
+
+class test:
+	ww="test"
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
+	def zwroc(self):
+	    return self.x +self.y
+	def podziel(self, z):
+		return self.x + self.y * z
+	def lista(self, lista1):
+		return lista1.split(" ")
+		
+ss=test(4, 4)
+print ss.zwroc(), ss.ww, type(ss.ww)
+print ss.podziel(2)
+zz=test(1,1)
+print zz.podziel(1)
+print zz.lista("urabure dfkjhjds dkfj")
