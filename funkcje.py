@@ -1,5 +1,6 @@
-
-
+# Krzysztof Garbala
+# -*- coding: utf-8 -*-
+# python3
 def wyswietl(a,*kwarg):
 	print (a,kwarg)
 	print (kwarg[3])
