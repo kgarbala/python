@@ -58,10 +58,17 @@ class test:
 		return self.x + self.y * z
 	def lista(self, lista1):
 		return lista1.split(" ")
+	def pierwiastek(self, liczba):
+		from math import sqrt
+		return sqrt(liczba)
 		
 ss=test(4, 4)
 print ss.zwroc(), ss.ww, type(ss.ww)
 print ss.podziel(2)
 zz=test(1,1)
 print zz.podziel(1)
-print zz.lista("urabure dfkjhjds dkfj")
+h=zz.lista("akjsdhakjsdh ajsdhajs ajshds dd")
+print zz.lista("urabure dfkjhjds dkfj"), h
+print zz.pierwiastek(10)
+print zz.zwroc()
+import visual
