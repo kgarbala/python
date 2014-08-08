@@ -1,9 +1,19 @@
+# Krzysztof Garbala
+# -*- coding: utf-8 -*-
+# python3
 
 
 def wyswietl(*arg):
 	print (arg)
 	print (arg[3])
 	print (sum(arg))
+
+
+def wyswietl(a,*kwarg):
+	print (a,kwarg)
+	print (kwarg[3])
+	print (sum(kwarg))
+
 	
 def recv(maxsize, *, block):
 	'Przyjmuje komunikat'
@@ -24,4 +34,4 @@ def minimum(*values, clip=None):
 
 
 print (minimum(12, 23, -9, 23,43534, 213,-1, clip=-12))
-
+print ("Sprawdznie")
