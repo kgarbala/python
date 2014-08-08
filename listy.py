@@ -86,3 +86,23 @@ def test(lista):
     print l+ str(k)
 
 map(test, lista2)
+
+
+
+print ("========------========")
+S=[[x for x in range(1,4)]*3]*3
+print S, len(S), len(S[0])
+i=0
+s1,s2,s3=S
+print s1,"s2=",s2,s3
+k=[]
+for x in S:
+	
+	for z in x:
+		
+		print z,
+		i+=1
+		s("%d") %(i)
+		
+		
+	
