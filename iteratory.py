@@ -3,7 +3,7 @@
 
 def iterator(start, stop, inc):
   while start<stop:
-    start+=inc
+    start += inc
     print start
   return start
-z=iterator(1,10,0.25)
+gen = iterator(1, 10, 0.25)

@@ -1,7 +1,7 @@
 # Krzysztof Garbala
 # -*- coding: utf-8 -*-
 
-import time
+import time, iteratory
 tick=time.time()
 localtime = time.localtime(time.time())
 print "Local current time :", localtime

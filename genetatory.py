@@ -35,7 +35,5 @@ dic={n1: n2 for n1, n2 in zip(s1, s2)}
 print dic
 
 
-
-
 print "Urabura"
   

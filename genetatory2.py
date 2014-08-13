@@ -4,7 +4,7 @@ def info():
 	yield "jest"
 	yield "?"
 	
-print " ".join(info())
+print " ".join(info()), next(info()), next(info())
 print "Urabura"
 print "Urabura"
 g=lambda x, y: x+y*2
